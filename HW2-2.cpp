@@ -32,7 +32,7 @@ int main() {
     Mat img_usm, img_blur, img_mask;
     if (!img_src.data)
     {
-        cout << "ÀÉ®×¶}±Ò¥¢±Ñ" << endl;
+        cout << "Ã€Ã‰Â®Ã—Â¶}Â±Ã’Â¥Â¢Â±Ã‘" << endl;
         return 0;
     }
     USM usm;
@@ -40,7 +40,7 @@ int main() {
     img_mask = usm.mask(img_src, img_blur);
     img_usm = usm.unsharpMask(img_src, img_mask);
     
-    //¼Ò½k¤Æ
+    //blur
     imshow("Blur", img_blur);
     imwrite("Blur.png", img_blur);
 
